@@ -6,7 +6,6 @@ import { Key } from "react";
 
 interface BarbershopDetailsPageProps {
     params: any;
-
 }
 
 const BarbershopDetailsPage = async ({ params }: BarbershopDetailsPageProps) => {
