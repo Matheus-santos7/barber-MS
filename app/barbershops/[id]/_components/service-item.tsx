@@ -67,7 +67,7 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
     setSubmitIsLoading(true);
 
     try {
-      if (!hour || !date || !data?.user) {
+      if (!hour || !date || !data || !data.user) {
         return;
       }
 
@@ -92,7 +92,7 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
         }),
         action: {
           label: "Visualizar",
-          onClick: () => router.push("/bookings"),
+          onClick: () => console.log("/"),
         },
       });
     } catch (error) {
