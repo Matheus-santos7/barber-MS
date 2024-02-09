@@ -17,12 +17,12 @@ interface BookingItemProps {
 }
 
 const BookingItem = ({booking}: BookingItemProps) => {
-    const isBookingConfirmed = isFuture(booking.date);
+    const isBookingConfirmed = isFuture(booking?.date);
     return (
         <Card>
             <CardContent className="py-0 flex px-0"> 
                 <div className="flex flex-col gap-2 py-5 flex-[3] pl-3">
-                    <Badge variant={isBookingConfirmed ? "default" : "secondary"} className="w-fit" >{isPast(booking.date) ? "finalizado" : "Confirmado"
+                    <Badge variant={isBookingConfirmed ? "default" : "secondary"} className="w-fit" >{isPast(booking?.date) ? "finalizado" : "Confirmado"
                     }</Badge>
                     {booking?.service && <h2 className="font-bold">{booking.service.name}</h2>}
 
