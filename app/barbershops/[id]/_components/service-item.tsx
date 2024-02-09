@@ -92,7 +92,7 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
         }),
         action: {
           label: "Visualizar",
-          onClick: () => console.log("/"),
+          onClick: () => router.push("/booking"),
         },
       });
     } catch (error) {
