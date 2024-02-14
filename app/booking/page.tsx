@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth";
 import Header from "../_components/header";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "../_lib/auth";
 import { signIn } from "next-auth/react";
 import { redirect } from "next/navigation";
 import { Card, CardContent } from "../_components/ui/card";
