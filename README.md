@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img width="206" alt="gobarber" src="/public/Logo.png">
+  <img width="206" alt="Barber MS" src="https://drive.google.com/file/d/1bTEDNeuH-KfvmaLtre8R5COAL9jZ7Gmd/view?usp=sharing">
 </h1>
 
 ## 💥 Barber MS | Barbearia
@@ -72,100 +72,37 @@ Este projeto propõe a criação de um sistema de agendamento para barbearias, v
     - nodeJS
     - express
     - typescript
-    - typeorm
     - postgres
     - mongodb
-    - redis
-    - uuidv4
     - date-fns
-    - multer
-    - celebrate/joi
     - dotenv
-    - class-transformer
-    - jest/ts-jest
-    - rate-limiter-flexible
-    - Amazon SES
-    - Amazon S3
+    - Next.js
 
   - **Front end**
     - react
     - typescript
-    - axios
+    - shandc/ui
     - react-router-dom
-    - styled-components
-    - polished
-    - react-spring
-    - yup
-    - date-fns
-    - react-day-picker
+    - tailwind css
 
   - **Outras tecnologias**
-    - Docker
+    - 
     
 ---
 
 ## 💻 Instruções para o back end
 
-  Começaremos criando as instâncias dos nossos bancos de dados. Para esse projeto, o **docker** foi utilizado. Abaixo, seguem os comandos para criar os containers e inicializar as instâncias:
 
-  ```bash
-    # Criando container com instância do postgres
-    docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
-
-    # Criando container com instância do mongo
-    docker run --name mongodb -p 27017:27017 -d -t mongo
-
-    # Criando container com instância do redis
-    docker run --name redis -p 6379:6379 -d -t redis:alpine
-
-    # Inicializando as instâncias
-    docker start postgres mongodb redis
-  ```
-
-  Primeiramente, você precisará criar um arquivo contendo as informações de acesso ao seu banco de dados. Esta aplicação foi desenvolvida utilizando o **Postgres** e **MongoDB**. Crie um arquivo chamado *ormconfig.json* na pasta `backend` e preencha conforme o arquivo-modelo *ormconfig.example.json*. Lembre-se, antes de rodar as migrations, de criar o banco de dados e informar o nome da sua base no arquivo *ormconfig.json*.
-  
-  ```bash
-    # Acessar a pasta do back end
-    cd backend
-
-    # Baixar as dependências
-    yarn
-
-    # Executar as migrations
-    yarn typeorm migration:run
-
-    # Inicializar o servidor de desenvolvimento
-    yarn dev:server
-  ```
-
-  Será necessário criar também um arquivo *.env*, que conterá as variáveis de ambiente. Use *.env.example* como modelo.
-
----
 
 ## 💻 Instruções para o front end
  
   Após executar o passo anterior e garantir que o back end está rodando, você poderá inicializar o front end:
 
-  ```bash
-    # Acessar a apsta do front end
-    cd frontend
 
-    # Baixar as dependências
-    yarn
-
-    # Inicializar a aplicação
-    yarn start
-  ```
 
 ## 🐞 Executando testes
 
-  ```bash
-    # Acessar a pasta do back end
-    cd backend
 
-    # Executando testes
-    yarn test
-  ```
 
 ## 📸 Interfaces da aplicação
   > Em desenvolvimento
