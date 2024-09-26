@@ -2,7 +2,7 @@
   <img width="206" alt="Barber MS" src="https://drive.google.com/file/d/1bTEDNeuH-KfvmaLtre8R5COAL9jZ7Gmd/view?usp=sharing">
 </h1>
 
-## 💥 Barber MS | Barbearia
+## 💥 Barber MS | Barbearia.
 
 Este projeto propõe a criação de um sistema de agendamento para barbearias, visando otimizar o processo de marcação de horários tanto para os clientes quanto para os profissionais. Utilizando tecnologias modernas como Next.js, React e PostgreSQL, nossa intenção é desenvolver uma aplicação web robusta, escalável e amigável para proporcionar uma experiência fluida aos usuários.
 
